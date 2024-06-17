@@ -4,6 +4,7 @@
 
 # sudo pacman -S bat
 
+# i-audio.sh
 # i-dunst.sh
 # i-ssh.sh
 # i-browserpass.sh
