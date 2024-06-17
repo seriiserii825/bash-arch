@@ -1,4 +1,4 @@
-#/bin/bash
+#! /bin/bash 
 
 ssh-keygen -t rsa -b 4096 -C "seriiburduja@mail.com"
 eval "$(ssh-agent -s)"
