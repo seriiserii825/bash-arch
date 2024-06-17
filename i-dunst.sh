@@ -9,5 +9,5 @@ fi
 cd $dir_path
 ln -s ~/xubuntu/dunstrc dunstrc
 
-sudo pacman -S polkit
+sudo pacman -S polkit lxsession
 # yay -S lxpolkit-git
