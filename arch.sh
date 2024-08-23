@@ -16,6 +16,7 @@ function menu(){
   echo "${tgreen}2. Speed up yay${treset}"
   echo "${tyellow}3. Config pacman.conf${treset}"
   echo "${tblue}4. Install i3${treset}"
+  echo "${tgreen}5. Chrome Git ssh${treset}"
   echo "${tmagenta}--------------Leave empty to exit${treset}"
 
   read -p "${tmagenta}Enter your choice: ${treset}" choice
@@ -41,6 +42,11 @@ function menu(){
     4)
       proceed
       source $MODULES_DIR/install-i3.sh
+      menu
+      ;;
+    4)
+      proceed
+      source $MODULES_DIR/git-ssh.sh
       menu
       ;;
     *)
