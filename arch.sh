@@ -18,6 +18,8 @@ function menu(){
   echo "${tblue}4. Install i3${treset}"
   echo "${tgreen}5. Chrome Git ssh${treset}"
   echo "${tyellow}6. Nvidia${treset}"
+  echo "${tblue}7. Locale${treset}"
+  echo "${tgreen}8. Polkit${treset}"
   echo "${tmagenta}--------------Leave empty to exit${treset}"
 
   read -p "${tmagenta}Enter your choice: ${treset}" choice
@@ -41,6 +43,7 @@ function menu(){
       menu
       ;;
     4)
+      ## need to finish
       proceed
       source $MODULES_DIR/install-i3.sh
       menu
@@ -53,6 +56,17 @@ function menu(){
     6)
       proceed
       source $MODULES_DIR/nvidia.sh
+      menu
+      ;;
+    7)
+      proceed
+      source $MODULES_DIR/locale.sh
+      menu
+      ;;
+    8)
+      # need to finish
+      proceed
+      source $MODULES_DIR/polkit.sh
       menu
       ;;
     *)
