@@ -13,8 +13,9 @@ function proceed(){
 
 function menu(){
   echo "${tblue}1. Install yay${treset}"
-  echo "${tblue}2. Speed up yay${treset}"
-  echo "${tblue}3. Config pacman.conf${treset}"
+  echo "${tgreen}2. Speed up yay${treset}"
+  echo "${tyellow}3. Config pacman.conf${treset}"
+  echo "${tblue}4. Install i3${treset}"
   echo "${tmagenta}--------------Leave empty to exit${treset}"
 
   read -p "${tmagenta}Enter your choice: ${treset}" choice
@@ -35,6 +36,11 @@ function menu(){
     3)
       proceed
       source $MODULES_DIR/configure-pacman.sh
+      menu
+      ;;
+    4)
+      proceed
+      source $MODULES_DIR/install-i3.sh
       menu
       ;;
     *)
