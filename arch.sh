@@ -17,6 +17,7 @@ function menu(){
   echo "${tyellow}3. Config pacman.conf${treset}"
   echo "${tblue}4. Install i3${treset}"
   echo "${tgreen}5. Chrome Git ssh${treset}"
+  echo "${tyellow}6. Nvidia${treset}"
   echo "${tmagenta}--------------Leave empty to exit${treset}"
 
   read -p "${tmagenta}Enter your choice: ${treset}" choice
@@ -44,23 +45,18 @@ function menu(){
       source $MODULES_DIR/install-i3.sh
       menu
       ;;
-    4)
+    5)
       proceed
       source $MODULES_DIR/git-ssh.sh
       menu
       ;;
+    6)
+      proceed
+      source $MODULES_DIR/nvidia.sh
+      menu
+      ;;
     *)
       echo "${tmagenta}Invalid choice${treset}"
-      ;;
-    3)
-      read -p "${tgreen}Do you want to proceed? yes/no: ${treset}" agree
-      if [ $agree != "yes" ]; then
-        echo "${tmagenta}Exiting...${treset}"
-        exit 0
-      else
-        source $MODULES_DIR/configure-pacman.sh
-      fi
-      menu
       ;;
   esac
 }
