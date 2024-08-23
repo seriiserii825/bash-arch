@@ -1,7 +1,5 @@
-# pacman_file_path="/etc/pacman.conf"
-pacman_file_path="/home/serii/Downloads/pacman.conf"
+pacman_file_path="/etc/pacman.conf"
 
-# uncomment Color
 ## if Color is commented
 if grep -q "#Color" $pacman_file_path; then
   sed -i 's/#Color/Color/' $pacman_file_path
