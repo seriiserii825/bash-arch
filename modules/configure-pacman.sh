@@ -19,7 +19,7 @@ else
 fi
 
 # add mirrors
-if grep -q "Server = https://mirror.js-webcoding.de/pub/archlinux/\$repo/os/\$arch" $pacman_file_path; then
+if grep -q "js-webcoding" $pacman_file_path; then
   echo "${tmagenta}mirror is already added${treset}"
 else
   cat <<TEST >> "$pacman_file_path"
@@ -33,4 +33,10 @@ TEST
 echo "${tgreen}mirror is now added${treset}"
 fi
 
-bat $pacman_file_path
+# show lines with Color and ParallelDownloads
+grep -n "Color" $pacman_file_path
+grep -n "ParallelDownloads" $pacman_file_path
+
+# show lines with webcoding 6 lines after
+grep -A 6 "js-webcoding" $pacman_file_path
+
