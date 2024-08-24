@@ -1,12 +1,14 @@
-sudo pacman -S pass unzip zip
-cd ~/Downloads
-
 zip_file_path=/home/serii/Downloads/desene_animate.zip
 
 if [ ! -f $zip_file_path ]; then
     echo "${tmagenta}$zip_file_path does not exist${treset}"
     exit 1
 fi
+
+
+sudo pacman -S pass unzip zip
+cd ~/Downloads
+
 
 pass init serii
 
@@ -27,4 +29,11 @@ cp -r ~/Downloads/passwords/.git ~/.password-store
 
 cd ~/.password-store
 
-echo "${tmagenta}Edit private key${treset}"
+read -p "You need to edit the private key. Press enter to continue" edit
+
+if [ -z $edit ]; then
+    echo "${tmagenta}Edit private key${treset}"
+    exit 1
+fi
+
+
