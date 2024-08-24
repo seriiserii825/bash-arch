@@ -84,8 +84,7 @@ case $choice in
     menu
     ;;
   13)
-    proceed
-    source $MODULES_DIR/skype.sh
+    source $MODULES_DIR/apps.sh
     menu
     ;;
   *)
