@@ -34,3 +34,11 @@ py_pacman_path="/home/serii/Documents/python/py-pacman"
 git clone git@github.com:seriiserii825/py-pacman.git $py_pacman_path
 cd $py_pacman_path
 installPip
+
+read -p "${tblue}Change .git in bash-arch with one from github, Press enter to continue${treset}" change
+if [ -z "$change" ]; then
+  exit 0
+else
+  exit 1
+fi
+
