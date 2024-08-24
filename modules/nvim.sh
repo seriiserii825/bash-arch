@@ -12,11 +12,5 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
 echo "${tmagenta}Restart terminal and run nvm install 18.19.0 and install yarn global${treset}"
 echo "Enable copilot"
 
-read -p input "Do you read info?y/n" info
-if [ $info == 'y' ]; then
-  exit 0
-else
-  exit 1
-fi
-
+read -p "Press enter to continue"
 

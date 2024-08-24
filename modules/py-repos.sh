@@ -35,7 +35,9 @@ git clone git@github.com:seriiserii825/py-pacman.git $py_pacman_path
 cd $py_pacman_path
 installPip
 
-read -p "${tblue}Change .git in bash-arch with one from github, Press enter to continue${treset}" change
+git clone git@github.com:seriiserii825/bash-arch.git ~/Downloads/bash-arch
+
+read -p "${tblue}Change .git in bash-arch with one from Downloads, Press enter to continue${treset}" change
 if [ -z "$change" ]; then
   exit 0
 else
