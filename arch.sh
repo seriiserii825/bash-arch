@@ -15,8 +15,8 @@ function menu(){
   echo "${tblue}1. Install yay${treset}"
   echo "${tgreen}2. Speed up yay${treset}"
   echo "${tyellow}3. Config pacman.conf${treset}"
-  echo "${tblue}4. Install i3${treset}"
-  echo "${tgreen}5. Chrome Git ssh${treset}"
+  echo "${tgreen}4. Chrome Git ssh${treset}"
+  echo "${tblue}5. Install i3${treset}"
   echo "${tyellow}6. Nvidia${treset}"
   echo "${tyellow}6.1 Zsh Oh-my-zsh${treset}"
   echo "${tblue}7. Locale${treset}"
@@ -24,6 +24,7 @@ function menu(){
   echo "${tyellow}9. Gpg Pass${treset}"
   echo "${tgreen}10. Py repos${treset}"
   echo "${tgreen}11. Audio${treset}"
+  echo "${tgreen}12. BrowserPass${treset}"
   echo "${tmagenta}--------------Leave empty to exit${treset}"
 
   read -p "${tmagenta}Enter your choice: ${treset}" choice
@@ -47,14 +48,14 @@ function menu(){
       menu
       ;;
     4)
-      ## need to finish
       proceed
-      source $MODULES_DIR/install-i3.sh
+      source $MODULES_DIR/git-ssh.sh
       menu
       ;;
     5)
+      ## need to finish
       proceed
-      source $MODULES_DIR/git-ssh.sh
+      source $MODULES_DIR/install-i3.sh
       menu
       ;;
     6)
@@ -91,6 +92,11 @@ function menu(){
     11)
       proceed
       source $MODULES_DIR/audio.sh
+      menu
+      ;;
+    12)
+      proceed
+      source $MODULES_DIR/browserpass.sh
       menu
       ;;
     *)
