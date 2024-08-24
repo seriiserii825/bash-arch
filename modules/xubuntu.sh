@@ -4,12 +4,8 @@ cd ~/Documents
 git clone git@github.com:seriiserii825/Knowledge-base_.git 
 
 dir_path=~/.config/dunst
-rm -rf dir_path
-if [ ! -d $dir_path ]; then
-    mkdir $dir_path
-fi
-cd $dir_path
-ln -s ~/xubuntu/dunstrc dunstrc
+mkdir $dir_path
+ln -s ~/xubuntu/dunstrc $dir_path/dunstrc
 
 rm -rf ~/.config/i3
 ln -s ~/xubuntu/i3 ~/.config/i3
