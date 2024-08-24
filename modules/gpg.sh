@@ -1,3 +1,4 @@
+sudo pacman -S pass unzip zip
 cd ~/Downloads
 
 zip_file_path=/home/serii/Downloads/desene_animate.zip
