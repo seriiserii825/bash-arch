@@ -12,9 +12,9 @@ function proceed(){
 }
 
 function menu(){
-  echo "${tblue}1. Install yay${treset}"
-  echo "${tgreen}2. Speed up yay${treset}"
-  echo "${tyellow}3. Config pacman.conf${treset}"
+  echo "${tyellow}1. Config pacman.conf${treset}"
+  echo "${tblue}2. Install yay${treset}"
+  echo "${tgreen}3. Speed up yay${treset}"
   echo "${tblue}3.1 Install i3${treset}"
   echo "${tyellow}3.2. Nvidia${treset}"
   echo "${tyellow}3.3 Chrome ${treset}"

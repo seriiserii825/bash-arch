@@ -5,17 +5,17 @@ echo "${tblue}You chose: $choice${treset}"
 case $choice in
   1)
     proceed
-    source $MODULES_DIR/install-yay.sh
+    source $MODULES_DIR/configure-pacman.sh
     menu
     ;;
   2)
     proceed
-    source $MODULES_DIR/speed-up-yay.sh
+    source $MODULES_DIR/install-yay.sh
     menu
     ;;
   3)
     proceed
-    source $MODULES_DIR/configure-pacman.sh
+    source $MODULES_DIR/speed-up-yay.sh
     menu
     ;;
   3.1)
