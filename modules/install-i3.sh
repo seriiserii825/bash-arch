@@ -1,7 +1,7 @@
 cd 
 sudo pacman -S vi vifm python 
 mkdir Downloads Documents Picture
-sudo pacman -S xorg xorg-xinit rofi i3 polybar mousepad polkit dunst lxsession xorg-apps libnotify alacritty dmenu copyq openssh xclip xsel jq bat wget curl
+sudo pacman -S xorg xorg-xinit rofi i3 polybar mousepad polkit dunst lxsession xorg-apps libnotify alacritty dmenu copyq openssh xclip xsel jq bat wget curl gnome-keyring
 
 sudo pacman -S ttf-dejavu awesome-terminal-fonts
 
