@@ -20,6 +20,8 @@ function menu(){
   echo "${tyellow}6. Nvidia${treset}"
   echo "${tblue}7. Locale${treset}"
   echo "${tgreen}8. Polkit${treset}"
+  echo "${tyellow}9. Gpg Pass${treset}"
+  echo "${tgreen}10. Py repos${treset}"
   echo "${tmagenta}--------------Leave empty to exit${treset}"
 
   read -p "${tmagenta}Enter your choice: ${treset}" choice
@@ -67,6 +69,16 @@ function menu(){
       # need to finish
       proceed
       source $MODULES_DIR/polkit.sh
+      menu
+      ;;
+    9)
+      proceed
+      source $MODULES_DIR/gpg.sh
+      menu
+      ;;
+    10)
+      proceed
+      source $MODULES_DIR/py-repos.sh
       menu
       ;;
     *)
