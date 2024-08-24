@@ -87,6 +87,11 @@ case $choice in
     source $MODULES_DIR/apps.sh
     menu
     ;;
+  14)
+    proceed
+    source $MODULES_DIR/chrome-extensions.sh
+    menu
+    ;;
   *)
     echo "${tmagenta}Invalid choice${treset}"
     ;;

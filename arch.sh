@@ -29,6 +29,7 @@ function menu(){
   echo "${tblue}11. Audio${treset}"
   echo "${tgreen}12. BrowserPass${treset}"
   echo "${tblue}13. Apps${treset}"
+  echo "${tblue}14. Chrome extenstions${treset}"
   echo "${tmagenta}--------------Leave empty to exit${treset}"
 
   source menu.sh
