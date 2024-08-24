@@ -1,10 +1,13 @@
+copyq menu
 
 echo "Use Nvidia or Nouveau driver? (1/2)"
 
 read -r driver
 
 if [ "$driver" = "1" ]; then
-    sudo pacman -S nvidia nvidia-utils nvidia-settings
+  sudo pacman -S nvidia nvidia-utils nvidia-settings
+  sudo pacman -R libgl
+  sudo pacman -R libgl xf86-video-nouveau
 elif [ "$driver" = "2" ]; then
   sudo pacman -Rdds nvidia nvidia-utils
   sudo pacman -S --asdeps libgl
@@ -22,4 +25,4 @@ else
     exit 1
 fi
 
-echo "${tmagenta}Restart your computer to apply changes${treset}"
+sudo reboot now

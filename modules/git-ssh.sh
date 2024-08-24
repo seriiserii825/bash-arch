@@ -1,7 +1,5 @@
 echo "${tgreen}Installing google chrome from aur${treset}"
 
-#yay -S google-chrome
-
 echo "${tblue}Installing ssh git${treset}"
 
 ssh-keygen -t rsa -b 4096 -C "seriiburduja@mail.com"
