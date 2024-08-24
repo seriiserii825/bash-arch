@@ -18,10 +18,12 @@ function menu(){
   echo "${tblue}4. Install i3${treset}"
   echo "${tgreen}5. Chrome Git ssh${treset}"
   echo "${tyellow}6. Nvidia${treset}"
+  echo "${tyellow}6.1 Zsh Oh-my-zsh${treset}"
   echo "${tblue}7. Locale${treset}"
-  echo "${tgreen}8. Polkit${treset}"
+  echo "${tgreen}8. Bash repos${treset}"
   echo "${tyellow}9. Gpg Pass${treset}"
   echo "${tgreen}10. Py repos${treset}"
+  echo "${tgreen}11. Audio${treset}"
   echo "${tmagenta}--------------Leave empty to exit${treset}"
 
   read -p "${tmagenta}Enter your choice: ${treset}" choice
@@ -60,6 +62,11 @@ function menu(){
       source $MODULES_DIR/nvidia.sh
       menu
       ;;
+    6.1)
+      proceed
+      source $MODULES_DIR/zsh.sh
+      menu
+      ;;
     7)
       proceed
       source $MODULES_DIR/locale.sh
@@ -68,7 +75,7 @@ function menu(){
     8)
       # need to finish
       proceed
-      source $MODULES_DIR/polkit.sh
+      # source $MODULES_DIR/polkit.sh
       menu
       ;;
     9)
@@ -79,6 +86,11 @@ function menu(){
     10)
       proceed
       source $MODULES_DIR/py-repos.sh
+      menu
+      ;;
+    11)
+      proceed
+      source $MODULES_DIR/audio.sh
       menu
       ;;
     *)

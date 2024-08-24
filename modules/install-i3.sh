@@ -1,3 +1,5 @@
+cd 
+git clone git@bitbucket.org:seriiserii825/xubuntu.git
 sudo pacman -S vi vifm python 
 mkdir Downloads Documents Picture
 sudo pacman -S xorg xorg-xinit rofi i3 polybar mousepad polkit dunst lxsession sddm mesa-libgl xterm xorg-apps
