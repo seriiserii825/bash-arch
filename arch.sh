@@ -28,7 +28,7 @@ function menu(){
   echo "${tgreen}10. Py repos${treset}"
   echo "${tblue}11. Audio${treset}"
   echo "${tgreen}12. BrowserPass${treset}"
-  echo "${tblue}13. Skype${treset}"
+  echo "${tblue}13. Skype, Telegram${treset}"
   echo "${tmagenta}--------------Leave empty to exit${treset}"
 
   source menu.sh
