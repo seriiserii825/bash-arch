@@ -5,6 +5,8 @@ sudo pacman -S xorg xorg-xinit rofi i3 polybar mousepad polkit dunst lxsession x
 
 sudo pacman -S ttf-dejavu awesome-terminal-fonts
 
+sudo pacman -S bluez bluez-utils pulseaudio-bluetooth usbutils
+
 cd
 cp /etc/X11/xinitrc > ~/.xinitrc
 cat <<TEST >> ".xinitrc"
