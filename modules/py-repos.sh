@@ -37,10 +37,5 @@ installPip
 
 git clone git@github.com:seriiserii825/bash-arch.git ~/Downloads/bash-arch
 
-read -p "${tblue}Change .git in bash-arch with one from Downloads, Press enter to continue${treset}" change
-if [ -z "$change" ]; then
-  exit 0
-else
-  exit 1
-fi
-
+rm -rf ~/Documents/bash-arch/.git
+cp -r ~/Downloads/bash-arch/.git ~/Documents/bash-arch/.git
