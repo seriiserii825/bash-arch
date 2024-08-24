@@ -1,6 +1,6 @@
 #! /bin/bash 
 
-sudo pacmans -S browserpass
+sudo pacman -S browserpass
 yay -S browserpass-chrome
 
 cd /usr/lib/browserpass
