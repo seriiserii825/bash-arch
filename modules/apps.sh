@@ -12,6 +12,8 @@ function installApp(){
   pacman_apps=(
     "telegram-desktop"
     "flameshot"
+    "php"
+    "mysql"
   )
   yay_apps=(
     "skypeforlinux-bin"
@@ -28,7 +30,15 @@ function installApp(){
   if [[ " ${pacman_apps[@]} " =~ " ${app} " ]]; then
     sudo pacman -S $app
   elif [[ " ${yay_apps[@]} " =~ " ${app} " ]]; then
-    yay -S $app
+    # if app is local-by-flywheel-bin
+    if [ $app == "local-by-flywheel-bin" ]; then
+      echo "${tmagenta}You need to install php${treset}"
+      echo "${tmagenta}You need to install mariadb by instruction from mariadb.md${treset}"
+      echo "${tmagenta}and after that install local-by-flywheel-bin${treset}"
+      proceed $app
+    else
+      yay -S $app
+    fi
   else
     echo "${tmagenta}App not found${treset}"
   fi
