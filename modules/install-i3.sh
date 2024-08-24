@@ -1,7 +1,7 @@
 cd 
 sudo pacman -S vi vifm python 
 mkdir Downloads Documents Picture
-sudo pacman -S xorg xorg-xinit rofi i3 polybar mousepad polkit dunst lxsession xorg-apps libnotify alacritty dmenu copyq openssh xclip xsel jq bat
+sudo pacman -S xorg xorg-xinit rofi i3 polybar mousepad polkit dunst lxsession xorg-apps libnotify alacritty dmenu copyq openssh xclip xsel jq bat wget curl
 cd
 cp /etc/X11/xinitrc > ~/.xinitrc
 cat <<TEST >> ".xinitrc"
