@@ -26,8 +26,9 @@ function menu(){
   echo "${tgreen}8. Bash repos${treset}"
   echo "${tyellow}9. Gpg Pass${treset}"
   echo "${tgreen}10. Py repos${treset}"
-  echo "${tgreen}11. Audio${treset}"
+  echo "${tblue}11. Audio${treset}"
   echo "${tgreen}12. BrowserPass${treset}"
+  echo "${tblue}13. Skype${treset}"
   echo "${tmagenta}--------------Leave empty to exit${treset}"
 
   source menu.sh

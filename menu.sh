@@ -83,6 +83,11 @@ case $choice in
     source $MODULES_DIR/browserpass.sh
     menu
     ;;
+  13)
+    proceed
+    source $MODULES_DIR/skype.sh
+    menu
+    ;;
   *)
     echo "${tmagenta}Invalid choice${treset}"
     ;;
