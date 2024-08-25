@@ -17,7 +17,6 @@ function installApp(){
   )
   yay_apps=(
     "skypeforlinux-bin"
-    "local-by-flywheel-bin"
   )
   apps=("${pacman_apps[@]}" "${yay_apps[@]}")
   # loop through the array and pring indx+name
