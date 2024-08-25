@@ -30,6 +30,7 @@ function menu(){
   echo "${tgreen}12. BrowserPass${treset}"
   echo "${tblue}13. Apps${treset}"
   echo "${tblue}14. Chrome extenstions${treset}"
+  echo "${tblue}15. Local wp${treset}"
   echo "${tmagenta}--------------Leave empty to exit${treset}"
 
   source menu.sh

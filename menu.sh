@@ -92,6 +92,11 @@ case $choice in
     source $MODULES_DIR/chrome-extensions.sh
     menu
     ;;
+  15)
+    proceed
+    source $MODULES_DIR/local-by-flywheel.sh
+    menu
+    ;;
   *)
     echo "${tmagenta}Invalid choice${treset}"
     ;;
