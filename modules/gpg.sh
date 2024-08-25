@@ -29,6 +29,7 @@ cp -r ~/Downloads/passwords/.git ~/.password-store
 
 cd ~/.password-store
 
+ln -s ~/xubuntu/alacritty ~/.config/alacritty
 read -p "You need to edit the private key. Press enter to continue" edit
 
 if [ -z $edit ]; then
