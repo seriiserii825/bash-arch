@@ -97,6 +97,11 @@ case $choice in
     source $MODULES_DIR/local-by-flywheel.sh
     menu
     ;;
+  16)
+    proceed
+    source $MODULES_DIR/libre-office.sh
+    menu
+    ;;
   *)
     echo "${tmagenta}Invalid choice${treset}"
     ;;
