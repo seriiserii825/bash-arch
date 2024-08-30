@@ -7,13 +7,14 @@ function proceed(){
     exit 0
   fi
 }
-
 function installApp(){
   pacman_apps=(
     "telegram-desktop"
     "flameshot"
     "php"
     "mysql"
+    "tesseract"
+    "tesseract-data-eng"
   )
   yay_apps=(
     "skypeforlinux-bin"
