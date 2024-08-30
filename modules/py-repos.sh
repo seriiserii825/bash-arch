@@ -35,6 +35,11 @@ git clone git@github.com:seriiserii825/py-pacman.git $py_pacman_path
 cd $py_pacman_path
 installPip
 
+py_scss_path="/home/serii/Documents/python/py-scss"
+git clone https://github.com/seriiserii825/py-scss
+cd $py_scss_path
+installPip
+
 git clone git@github.com:seriiserii825/bash-arch.git ~/Downloads/bash-arch
 
 rm -rf ~/Documents/bash-arch/.git
