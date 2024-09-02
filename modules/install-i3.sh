@@ -1,5 +1,8 @@
 cd 
 sudo pacman -S vi vifm python 
+sudo touch /etc/pip.conf
+sudo echo "[global]\nbreak-system-packages = true" >> /etc/pip.conf
+
 mkdir Downloads Documents Picture
 sudo pacman -S xorg xorg-xinit rofi i3 polybar mousepad polkit dunst lxsession xorg-apps libnotify alacritty dmenu copyq openssh xclip xsel jq bat wget curl gnome-keyring polkit-gnome unzip zip nitrogen feh
 sudo pacman -S ttf-dejavu awesome-terminal-fonts
