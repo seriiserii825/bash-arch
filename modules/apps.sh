@@ -18,6 +18,7 @@ function installApp(){
   )
   yay_apps=(
     "skypeforlinux-bin"
+    "st"
   )
   apps=("${pacman_apps[@]}" "${yay_apps[@]}")
   # loop through the array and pring indx+name
