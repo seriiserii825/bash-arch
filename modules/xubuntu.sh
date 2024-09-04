@@ -14,3 +14,5 @@ rm -rf ~/.config/alacritty
 ln -s ~/xubuntu/alacritty ~/.config/alacritty
 rm -rf ~/.config/vifm
 ln -s ~/xubuntu/vifm ~/.config/vifm
+rm /home/serii/.config/google-chrome/Default/Preferences
+ln -s ~/xubuntu/Preferences /home/serii/.config/google-chrome/Default/Preferences
