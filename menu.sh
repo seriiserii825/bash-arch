@@ -102,6 +102,11 @@ case $choice in
     source $MODULES_DIR/libre-office.sh
     menu
     ;;
+  17)
+    proceed
+    source $MODULES_DIR/smtp.sh
+    menu
+    ;;
   *)
     echo "${tmagenta}Invalid choice${treset}"
     ;;

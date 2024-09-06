@@ -32,6 +32,7 @@ function menu(){
   echo "${tblue}14. Chrome extenstions${treset}"
   echo "${tblue}15. Local wp${treset}"
   echo "${tblue}16. Libre Office${treset}"
+  echo "${tblue}17. Smtp${treset}"
   echo "${tmagenta}--------------Leave empty to exit${treset}"
 
   source menu.sh
