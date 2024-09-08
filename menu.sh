@@ -33,6 +33,11 @@ case $choice in
     source $MODULES_DIR/google-chrome.sh
     menu
     ;;
+  3.4)
+    proceed
+    source $MODULES_DIR/warp-terminal.sh
+    menu
+    ;;
   4)
     proceed
     source $MODULES_DIR/git-ssh.sh
