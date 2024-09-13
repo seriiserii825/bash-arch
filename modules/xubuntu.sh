@@ -16,3 +16,5 @@ rm -rf ~/.config/vifm
 ln -s ~/xubuntu/vifm ~/.config/vifm
 rm /home/serii/.config/google-chrome/Default/Preferences
 ln -s ~/xubuntu/Preferences /home/serii/.config/google-chrome/Default/Preferences
+rm ~/.gitconfig
+ln -s ~/xubuntu/.gitconfig ~/.gitconfig
