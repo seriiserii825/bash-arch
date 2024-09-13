@@ -5,7 +5,7 @@ sudo echo "[global]\nbreak-system-packages = true" >> /etc/pip.conf
 
 mkdir Downloads Documents Picture
 sudo pacman -S xorg xorg-xinit rofi i3 polybar mousepad polkit dunst lxsession xorg-apps libnotify alacritty dmenu copyq openssh xclip xsel jq bat wget curl gnome-keyring polkit-gnome unzip zip nitrogen feh
-sudo pacman -S ttf-dejavu awesome-terminal-fonts
+sudo pacman -S ttf-dejavu awesome-terminal-fonts woff2
 sudo pacman -S bluez bluez-utils pulseaudio-bluetooth usbutils
 cd
 cp /etc/X11/xinitrc > ~/.xinitrc

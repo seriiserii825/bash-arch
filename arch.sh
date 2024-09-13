@@ -18,6 +18,7 @@ function menu(){
   echo "${tblue}3.1 Install i3${treset}"
   echo "${tyellow}3.2. Nvidia${treset}"
   echo "${tyellow}3.3 Chrome ${treset}"
+  echo "${tyellow}3.4 Warp terminal ${treset}"
   echo "${tgreen}4.Git ssh${treset}"
   echo "${tgreen}4.1 Download xubuntu${treset}"
   echo "${tyellow}5 Zsh Oh-my-zsh${treset}"

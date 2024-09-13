@@ -15,6 +15,7 @@ function installApp(){
     "mysql"
     "tesseract"
     "tesseract-data-eng"
+    "translate-shell"
   )
   yay_apps=(
     "skypeforlinux-bin"
