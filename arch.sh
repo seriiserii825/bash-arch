@@ -30,10 +30,11 @@ function menu(){
   echo "${tblue}11. Audio${treset}"
   echo "${tgreen}12. BrowserPass${treset}"
   echo "${tblue}13. Apps${treset}"
-  echo "${tblue}14. Chrome extenstions${treset}"
+  echo "${tgreen}14. Chrome extenstions${treset}"
   echo "${tblue}15. Local wp${treset}"
-  echo "${tblue}16. Libre Office${treset}"
+  echo "${tgreen}16. Libre Office${treset}"
   echo "${tblue}17. Smtp${treset}"
+  echo "${tgreen}18. Android${treset}"
   echo "${tmagenta}--------------Leave empty to exit${treset}"
 
   source menu.sh

@@ -112,6 +112,11 @@ case $choice in
     source $MODULES_DIR/smtp.sh
     menu
     ;;
+  17)
+    proceed
+    source $MODULES_DIR/android.sh
+    menu
+    ;;
   *)
     echo "${tmagenta}Invalid choice${treset}"
     ;;
