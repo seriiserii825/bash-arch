@@ -40,6 +40,11 @@ git clone https://github.com/seriiserii825/py-scss
 cd $py_scss_path
 installPip
 
+py_wc_path="/home/serii/Documents/python/wc-python"
+git clone git@github.com:seriiserii825/wc-python.git
+cd $py_wc_path
+installPip
+
 git clone git@github.com:seriiserii825/bash-arch.git ~/Downloads/bash-arch
 
 rm -rf ~/Documents/bash-arch/.git
