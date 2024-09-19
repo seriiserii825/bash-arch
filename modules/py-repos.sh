@@ -45,6 +45,11 @@ git clone git@github.com:seriiserii825/wc-python.git
 cd $py_wc_path
 installPip
 
+py_gpl="/home/serii/Documents/python/py-gpl"
+git clone git@github.com:seriiserii825/py-gpl.git
+cd $py_gpl
+installPip
+
 git clone git@github.com:seriiserii825/bash-arch.git ~/Downloads/bash-arch
 
 rm -rf ~/Documents/bash-arch/.git
