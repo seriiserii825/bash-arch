@@ -112,9 +112,14 @@ case $choice in
     source $MODULES_DIR/smtp.sh
     menu
     ;;
-  17)
+  18)
     proceed
     source $MODULES_DIR/android.sh
+    menu
+    ;;
+  19)
+    proceed
+    source $MODULES_DIR/youtube.sh
     menu
     ;;
   *)
