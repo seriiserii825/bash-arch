@@ -36,6 +36,7 @@ function menu(){
   echo "${tblue}17. Smtp${treset}"
   echo "${tgreen}18. Android${treset}"
   echo "${tgreen}19. Youtube${treset}"
+  echo "${tgreen}20. Hyprland${treset}"
   echo "${tmagenta}--------------Leave empty to exit${treset}"
 
   source menu.sh

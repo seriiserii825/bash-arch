@@ -122,6 +122,11 @@ case $choice in
     source $MODULES_DIR/youtube.sh
     menu
     ;;
+  20)
+    proceed
+    source $MODULES_DIR/hyprland.sh
+    menu
+    ;;
   *)
     echo "${tmagenta}Invalid choice${treset}"
     ;;
