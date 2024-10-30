@@ -77,7 +77,7 @@ Enter fullscreen mode Exit fullscreen mode
 Create a new MySQL user with the desired username and password:  
 
 ```
-CREATE USER '<username>'@'localhost' IDENTIFIED BY '<password>';
+CREATE USER 'serii'@'localhost' IDENTIFIED BY 'serii1981';
 ```
 
 Enter fullscreen mode Exit fullscreen mode
