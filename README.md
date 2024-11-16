@@ -4,6 +4,8 @@
 lsblk
 cfdisk /dev/sda
 delete all partitions
+
+in /etc/pacman.conf uncomment #Color and change Paralel to 5
 ```
 
 ## connect to wifi

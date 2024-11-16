@@ -55,6 +55,11 @@ case $choice in
     ;;
   6.2)
     proceed
+    source $MODULES_DIR/nvm.sh
+    menu
+    ;;
+  6.3)
+    proceed
     source $MODULES_DIR/nvim.sh
     menu
     ;;

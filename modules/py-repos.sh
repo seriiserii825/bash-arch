@@ -33,13 +33,6 @@ if [ ! -d $py_parsing_url ]; then
   installPip
 fi
 
-lf_path="/home/serii/Documents/python/py-lf"
-if [ ! -d $lf_path ]; then
-  git clone git@github.com:seriiserii825/py-lf.git $lf_path
-  cd $lf_path
-  installPip
-fi
-
 py_pacman_path="/home/serii/Documents/python/py-pacman"
 if [ ! -d $py_pacman_path ]; then
   git clone git@github.com:seriiserii825/py-pacman.git $py_pacman_path
@@ -49,15 +42,40 @@ fi
 
 py_scss_path="/home/serii/Documents/python/py-scss"
 if [ ! -d $py_scss_path ]; then
-  git clone https://github.com/seriiserii825/py-scss
+  git clone https://github.com/seriiserii825/py-scss $py_scss_path
   cd $py_scss_path
   installPip
 fi
 
-py_wc_path="/home/serii/Documents/python/wc-python"
-if [ ! -d $py_wc_path ]; then
-  git clone git@github.com:seriiserii825/wc-python.git
-  cd $py_wc_path
+py_sync_system_path="/home/serii/Documents/python/py-sync-system"
+if [ ! -d $py_sync_system_path ]; then
+  git clone git@github.com:seriiserii825/py-sync-system.git $py_sync_system_path
+  cd $py_sync_system_path
+  installPip
+fi
+
+py_clipboard_path="/home/serii/Documents/python/py-clipboard"
+if [ ! -d $py_clipboard_path ]; then
+  git clone git@github.com:seriiserii825/py-clipboard.git $py_clipboard_path
+  cd $py_clipboard_path
+  installPip
+fi
+
+# /home/serii/Documents/python/py-commit
+
+py_commit_path="/home/serii/Documents/python/py-commit"
+if [ ! -d $py_commit_path ]; then
+  git clone git@github.com:seriiserii825/py-commit.git $py_commit_path
+  cd $py_commit_path
+  installPip
+fi
+
+# /home/serii/Documents/python/py-lv
+
+py_lv_path="/home/serii/Documents/python/py-lv"
+if [ ! -d $py_lv_path ]; then
+  git clone git@github.com:seriiserii825/py-lv.git
+  cd $py_lv_path
   installPip
 fi
 
