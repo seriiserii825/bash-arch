@@ -88,6 +88,11 @@ case $choice in
     source $MODULES_DIR/audio.sh
     menu
     ;;
+  11.1)
+    proceed
+    source $MODULES_DIR/bluetooth.sh
+    menu
+    ;;
   12)
     proceed
     source $MODULES_DIR/browserpass.sh

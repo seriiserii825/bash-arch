@@ -29,6 +29,7 @@ function menu(){
   echo "${tyellow}9. Gpg Pass${treset}"
   echo "${tgreen}10. Py repos${treset}"
   echo "${tblue}11. Audio${treset}"
+  echo "${tblue}11.1. Bluetooth${treset}"
   echo "${tgreen}12. BrowserPass${treset}"
   echo "${tblue}13. Apps${treset}"
   echo "${tgreen}14. Chrome extenstions${treset}"
