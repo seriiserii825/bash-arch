@@ -129,7 +129,12 @@ case $choice in
     ;;
   18)
     proceed
-    source $MODULES_DIR/android.sh
+    source $MODULES_DIR/docker.sh
+    menu
+    ;;
+  18.1)
+    proceed
+    source $MODULES_DIR/docker-compose.sh
     menu
     ;;
   19)
