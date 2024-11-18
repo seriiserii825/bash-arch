@@ -63,6 +63,11 @@ case $choice in
     source $MODULES_DIR/nvim.sh
     menu
     ;;
+  6.4)
+    proceed
+    source $MODULES_DIR/nerd-fonts.sh
+    menu
+    ;;
   7)
     proceed
     source $MODULES_DIR/locale.sh

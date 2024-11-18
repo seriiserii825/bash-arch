@@ -24,6 +24,7 @@ function menu(){
   echo "${tyellow}5 Zsh Oh-my-zsh${treset}"
   echo "${tyellow}6.2 nvm(node js)${treset}"
   echo "${tyellow}6.3 Neovim${treset}"
+  echo "${tyellow}6.4 Nerd Fonts${treset}"
   echo "${tblue}7. Locale${treset}"
   echo "${tgreen}8. Bash repos${treset}"
   echo "${tyellow}9. Gpg Pass${treset}"
