@@ -1,9 +1,10 @@
 #! /bin/bash 
 
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/FiraCode.zip
-mkdir ~/.local/share/fonts
-
 cd ~/Downloads
+
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/FiraCode.zip
+
+mkdir ~/.local/share/fonts
 
 unzip FiraCode.zip
 
